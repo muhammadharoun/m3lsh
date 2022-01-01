@@ -7,7 +7,7 @@ import "./App.css";
 import { Hug , M3lsh,Home } from './components';
 
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <Switch>

@@ -12,8 +12,8 @@ const images = [
     { id: 7, src: require('./images/7.gif') },
     { id: 8, src: require('./images/8.gif') },
   ];
-function Hug() {
-    const [counter, setCounter] = useState(0)
+const Hug:React.FC = () => {
+    const [counter, setCounter] = useState<number>(0)
     return (
         <div className='hug_container'>   
         {
@@ -44,10 +44,6 @@ function Hug() {
         </Link>
     </div>
 )}
-            {/* <img src={images[counter].src} alt="" /> */}
-      
-
-
         </div>
     )
 }

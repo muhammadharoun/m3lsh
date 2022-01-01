@@ -3,7 +3,7 @@ import {  Link } from "react-router-dom";
 
 import './style.css'
 const m3lshVideo = require('../../assets/m3lsh-vid.mp4')
-function M3lsh() {
+const M3lsh:React.FC = () => {
     return (
         <div className='video-container'>
             <Link to="/" className='btn btn-colored'>

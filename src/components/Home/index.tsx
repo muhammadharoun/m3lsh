@@ -4,7 +4,7 @@ import './style.css'
 const HugImage = require("../../assets/hug.png");
 const M3lshImage  = require("../../assets/m3lsh.png");
 
-function Home() {
+const Home:React.FC = ()=> {
     return (
             <div className="App">
         <Link to="/hug">
