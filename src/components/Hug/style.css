@@ -1,0 +1,48 @@
+.hug_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blue;
+    height: 100vh;
+
+}
+img{
+    width: 20%;
+    height: auto;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.btn{
+    margin: 0 1rem 2rem 1rem;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 30px;
+    color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.btn-colored{
+    background-color: #E0FC60;
+    color: #555;
+}
+
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+
+    color: #0061fe;
+
+}

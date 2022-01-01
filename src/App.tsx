@@ -1,29 +1,32 @@
-import React from 'react';
-import ReactDOM from "react-dom";
+import React from "react";
 import {
-  BrowserRouter as Router,
-  Route,
-  useParams
-} from "react-router-dom";
+  BrowserRouter as Router, Route, Switch,
+} from 'react-router-dom';
 
-import './App.css';
-const Hug = require('./assets/hug.png')
-const M3lsh = require('./assets/m3lsh.png')
+import "./App.css";
+import { Hug , M3lsh,Home } from './components';
 
 
 function App() {
   return (
-    <div className="App">
-      <div className='container'> 
-      <img src={Hug} alt="hug" className='image' />
-        <h1>hug me</h1>
-      </div>
+    <Router>
+      <Switch>
+      <Route exact path="/" >
+        <Home />
+      </Route>
+      <Route path="/hug">
+        
+        <Hug />
+    
+      </Route>
 
-      <div className='container'> 
-      <img src={M3lsh} alt="hug" className='image' />
-        <h1>motivated</h1>
-      </div>
-    </div>
+      <Route path="/m3lsh">
+        <M3lsh />
+      </Route>
+      </Switch>
+
+    </Router>
+
   );
 }
 
